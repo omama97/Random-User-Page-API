@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./Favicon/frog-icon.ico" />
+    <title>Catch The Frog Game</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="timer"><span id="secondTimer">-</span> Seconds left</div>
+
+      <div id="playground"></div>
+
+      <div id="start">
+        <div id="start-container">
+          <div id="frogsCount" class="start-item">
+            <span id="frogsLeft">-</span> Frog left
+          </div>
+          <div id="startCatching" class="start-item" onclick="startCatching()">
+            Start
+          </div>
+          <div id="levelCount" class="start-item">
+            level <span id="levelNum">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Jquery/jquery.js"></script>
+    <script src="./JS/timer.js"></script>
+    <script src="./JS/colorsArr.js"></script>
+    <script src="./JS/model.js"></script>
+    <script src="./JS/render.js"></script>
+    <script src="./JS/controller.js"></script>
+  </body>
+</html>

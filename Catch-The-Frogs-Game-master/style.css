@@ -1,0 +1,79 @@
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 10fr 2fr;
+  grid-template-areas: 't' 'd' 's';
+}
+
+/*Timer*/
+
+#timer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: min-content auto;
+  column-gap: 10px;
+  grid-area: t;
+  height: 5vh;
+  padding: 15px;
+  background-color: #611875;
+  color: antiquewhite;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid darkblue;
+}
+
+/* Find the frog*/
+
+#playground {
+  display: grid;
+  position: relative;
+  grid-area: d;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 100%;
+  padding: 5px;
+  background-image: url('https://cdn.pixabay.com/photo/2020/03/22/06/57/game-background-4956017_1280.jpg');
+  background-size: cover;
+  border: 1px solid darkblue;
+}
+
+.frogClass {
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+}
+
+/* Info bar */
+#start {
+  display: grid;
+  grid-area: s;
+  height: 15vh;
+  background-color: #611875;
+  color: antiquewhite;
+  border: 1px solid darkblue;
+}
+
+#start-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.start-item {
+  display: grid;
+  place-content: center;
+  grid-template-columns: min-content auto;
+  column-gap: 10px;
+  color: antiquewhite;
+  height: 100%;
+}
+
+#startCatching {
+  background-color: #602071;
+  color: antiquewhite;
+  border: 1px solid darkblue;
+  grid-template-columns: max-content auto;
+  cursor: pointer;
+}
